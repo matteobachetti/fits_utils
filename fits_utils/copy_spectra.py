@@ -17,6 +17,8 @@ def force_link(file1, file2):
 
 def main(args=None):
     if args is None:
+        args = sys.argv
+    if args is None:
         sys.exit("copy_spectra input_file.ext outroot")
     fname = args[1]
     outroot = args[2]
